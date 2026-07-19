@@ -1,0 +1,84 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: #548687;
+    text-align: center;
+}
+#container {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#game {
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+.but0{
+    height: 18vh;
+    width: 18vh;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+    font-size: 8vmin;
+    color: #b0413e;
+    background-color: aqua;
+}
+#box {
+    height: 5vmin;
+    width: 15vmin;
+    background-color: darkslateblue;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+}
+#newButton {
+    height: 4.5vmin;
+    width: 15vmin;
+    background-color: darkslateblue;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+}
+#winner {
+    color: bisque;
+    font-size: 6vmin;
+}
+.mas-contener {
+    height: 20vmin;
+}
+.hide {
+    display: none;
+}
+@media (max-width: 400px) {
+    #game {
+        height: 90vmin;
+        width: 90vmin;
+        gap: 2vmin;
+    }
+    .but0 {
+        height: 28vmin;
+        width: 28vmin;
+        font-size: 8vmin;
+    }
+    #box {
+        width: 35vmin;
+        height: 8vmin;
+        font-size: 4vmin;
+    }
+    #newButton {
+        width: 35vmin;
+        height: 8vmin;
+        font-size: 4vmin;
+    }
+    #winner {
+        font-size: 8vmin;
+    }
+}
