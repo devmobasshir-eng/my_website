@@ -7,7 +7,7 @@ body {
     text-align: center;
 }
 #container {
-    height: 70vh;
+    height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,37 +27,54 @@ body {
     border: none;
     border-radius: 1rem;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
-    font-size: 8vmin;
+    font-size: 110px;
     color: #b0413e;
     background-color: aqua;
 }
-#box {
-    height: 5vmin;
-    width: 15vmin;
-    background-color: darkslateblue;
-    color: white;
-    border: none;
-    border-radius: 0.5rem;
+#box, #newButton {
+    background-color: #1b2e3c; /* Ek deep navy blue shade jo background se alag dikhega */
+    color: #ffffff;            /* Pure white text clear visibility ke liye */
+    font-size: 1.1rem;         /* Size ko thoda professional aur crisp kiya */
+    font-weight: 600;          /* Semi-bold text */
+    padding: 12px 28px;        /* Symmetrical padding achhe dynamic shape ke liye */
+    border: 2px solid rgba(255, 255, 255, 0.1); /* Halka border modern feel dene ke liye */
+    border-radius: 50px;       /* Pill-shaped smooth corners */
+    cursor: pointer;
+    letter-spacing: 0.5px;     /* Text readable lagne ke liye */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Soft shadow depth ke liye */
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); /* Premium smooth transition animation */
 }
-#newButton {
-    height: 4.5vmin;
-    width: 15vmin;
-    background-color: darkslateblue;
-    color: white;
-    border: none;
-    border-radius: 0.5rem;
+
+/* Hover karne par premium glowing effect */
+#box:hover, #newButton:hover {
+    background-color: #ff4a5a; /* Coral red color jo energetic lagta hai aur focus khinchta hai */
+    color: #ffffff;
+    transform: translateY(-3px); /* Button halka sa upar ki taraf lift hoga */
+    box-shadow: 0 8px 20px rgba(255, 74, 90, 0.4); /* Glow effect jo naye background se match karega */
+}
+
+/* Click karne par press hone wala feedback */
+#box:active, #newButton:active {
+    transform: translateY(-1px); /* Halka sa dabega click hone par */
+    box-shadow: 0 4px 10px rgba(255, 74, 90, 0.2);
 }
 #winner {
     color: bisque;
     font-size: 6vmin;
 }
 .mas-contener {
-    height: 20vmin;
+    height: 100px;
 }
 .hide {
     display: none;
 }
-@media (max-width: 400px) {
+h1 {
+    height: 50px;
+}
+@media (max-width: 431px) {
+    * {
+        font-family: 'poppins', 'segoe ui', sans-serif;
+    }
     #game {
         height: 90vmin;
         width: 90vmin;
@@ -66,19 +83,56 @@ body {
     .but0 {
         height: 28vmin;
         width: 28vmin;
-        font-size: 8vmin;
+        font-size: 60px;
+        font-weight: bold;
+        border-radius: 1rem;
+        box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+        color: #b0413e;
+        background-color: aqua;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-    #box {
-        width: 35vmin;
-        height: 8vmin;
-        font-size: 4vmin;
+    .but0:hover {
+        background-color: #00e5ff;
+        cursor: pointer;
+        transform: scale(1.05);
+        box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.4);
     }
-    #newButton {
-        width: 35vmin;
-        height: 8vmin;
-        font-size: 4vmin;
+    #box, #newButton {
+        width: 50vmin;
+        height: 15vmin;
+        font-size: 5vmin;
+        white-space: nowrap;
     }
     #winner {
         font-size: 8vmin;
+    }
+    h1 {
+        padding: 6px;
+        margin: 6px;
+    }
+    #container {
+        height: 440px;
+    }
+}
+@media (max-width: 300px) {
+    #container {
+        height: 250px;
+    }
+}
+@media (max-width: 765px)and (min-width: 432px) {
+    .but0 {
+        height: 22vmin;
+        width: 22vmin;
+        font-size: 75px;
+    }
+    #game {
+        height: 70vmin;
+        width: 70vmin;
+        gap: 2vmin;
+    }
+    #container {
+        height: 550px;
     }
 }
