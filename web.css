@@ -32,38 +32,46 @@ body {
     background-color: aqua;
 }
 #box, #newButton {
-    background-color: #1b2e3c; /* Ek deep navy blue shade jo background se alag dikhega */
-    color: #ffffff;            /* Pure white text clear visibility ke liye */
-    font-size: 1.1rem;         /* Size ko thoda professional aur crisp kiya */
-    font-weight: 600;          /* Semi-bold text */
-    padding: 12px 28px;        /* Symmetrical padding achhe dynamic shape ke liye */
-    border: 2px solid rgba(255, 255, 255, 0.1); /* Halka border modern feel dene ke liye */
-    border-radius: 50px;       /* Pill-shaped smooth corners */
+    background-color: #1b2e3c;
+    color: #ffffff;            
+    font-size: 1.1rem;         
+    font-weight: 600;         
+    padding: 12px 28px;        
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50px;     
     cursor: pointer;
-    letter-spacing: 0.5px;     /* Text readable lagne ke liye */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Soft shadow depth ke liye */
-    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); /* Premium smooth transition animation */
+    letter-spacing: 0.5px;    
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); 
 }
 
-/* Hover karne par premium glowing effect */
 #box:hover, #newButton:hover {
-    background-color: #ff4a5a; /* Coral red color jo energetic lagta hai aur focus khinchta hai */
+    background-color: #ff4a5a; 
     color: #ffffff;
-    transform: translateY(-3px); /* Button halka sa upar ki taraf lift hoga */
-    box-shadow: 0 8px 20px rgba(255, 74, 90, 0.4); /* Glow effect jo naye background se match karega */
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(255, 74, 90, 0.4); 
 }
 
-/* Click karne par press hone wala feedback */
+
 #box:active, #newButton:active {
-    transform: translateY(-1px); /* Halka sa dabega click hone par */
+    transform: translateY(-1px); 
     box-shadow: 0 4px 10px rgba(255, 74, 90, 0.2);
 }
 #winner {
-    color: bisque;
-    font-size: 6vmin;
+  background-color: #ffe6e6;  
+  border: 2px solid #ff4d4d;  
+  color: #b30000;             
+  text-align: center;
+  padding: 10px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: bold;
+  width: 400px;
+  margin: 20px auto;
 }
 .mas-contener {
-    height: 100px;
 }
 .hide {
     display: none;
@@ -71,6 +79,28 @@ body {
 h1 {
     height: 50px;
 }
+
+.draw-contener {
+  background-color: #ffe6e6;  
+  border: 2px solid #ff4d4d;  
+  color: #b30000;             
+  text-align: center;
+  padding: 20px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: bold;
+  width: 300px;
+  margin: 20px auto;
+}
+.draw-contener p {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+
 @media (max-width: 431px) {
     * {
         font-family: 'poppins', 'segoe ui', sans-serif;
