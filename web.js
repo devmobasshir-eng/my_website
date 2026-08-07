@@ -52,7 +52,7 @@ const enableButton = () => {
 };
 
 const showWinner = (winner) => {
-    winnerList.innerText = `Congratulation, Winner is ${winner}`;
+    winnerList.innerText = `Winner is ${winner}`;
     massegContener.classList.remove("hide");
     disableButton();
 };
